@@ -44,15 +44,16 @@
     padding-top: 25px;
 }
 
-p, li
+p,
+li
 {
-    font-family: Arial,Helvetica,sans-serif !important;
+    font-family: Arial, Helvetica, sans-serif !important;
     font-size: 12px;
 }
 
 a
 {
-    font-family: Arial,Helvetica,sans-serif !important;
+    font-family: Arial, Helvetica, sans-serif !important;
     text-decoration: none;
     color: #2a55d4;
 }
@@ -82,7 +83,8 @@ li
     font-size: 16px;
 }
 
-.link1, .link4:visited
+.link1,
+.link4:visited
 {
     color: #15348f;
     font-size: 16px;
@@ -98,7 +100,8 @@ li
     font-size: 14px;
 }
 
-.link4, .link4:visited
+.link4,
+.link4:visited
 {
     font-weight: bold;
     color: black;
@@ -170,7 +173,8 @@ input
 .extra
 {
     background: white;
-    border: 18px solid transparent;	border-left: 18px solid gold;
+    border: 18px solid transparent;
+    border-left: 18px solid gold;
 }
 
 input:focus
@@ -197,10 +201,10 @@ input:focus
 
 .news
 {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .banner
