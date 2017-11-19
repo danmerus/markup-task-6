@@ -45,7 +45,8 @@
 }
 
 p,
-li
+li,
+span
 {
     font-family: Arial, Helvetica, sans-serif !important;
     font-size: 12px;
