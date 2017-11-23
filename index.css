@@ -268,9 +268,8 @@ input:focus
 
 .logo
 {
-    object-fit: contain;
-    width: 145%;
-    height: 100%;
+    height: 75px;
+    margin-left: 115px;
 }
 
 .weather-logo
