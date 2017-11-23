@@ -5,22 +5,22 @@
     grid-template-columns: 1fr 3fr 1fr;
 }
 
-.el2
+.top-center-block
 {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
-.el3
+.top-right-block
 {
     display: flex;
     flex-direction: row;
 }
 
-.el8
+.bottom-center-block
 {
     display: grid;
-    grid-template-columns: 1fr 10px 1fr 10px 1fr;
+    grid-template-columns: 1fr 20px 1fr 20px 1fr;
 }
 
 .col3
@@ -45,27 +45,37 @@
 
 p,
 li,
-span
+span,
+div
 {
     font-family: Arial, Helvetica, sans-serif !important;
     font-size: 12px;
 }
 
-a
+a,
+h1
 {
     font-family: Arial, Helvetica, sans-serif !important;
     text-decoration: none;
     color: #2356ba;
+    font-weight: normal;
 }
 
-ul
+.news-list
 {
     margin-top: -10px;
 }
 
-li
+.news-elem
 {
     margin-left: 30px;
+}
+
+.tv-list
+{
+    margin-left: -40px;
+    list-style: none;
+    line-height: 2.4;
 }
 
 .money
@@ -90,25 +100,25 @@ li
     font-size: 16px;
 }
 
-.link1,
-.link4:visited
+.dark-header-link,
+.black-link:visited
 {
     color: #15348f;
     font-size: 16px;
 }
 
-.link2
+.default-header-link
 {
     font-size: 16px;
 }
 
-.link3
+.default-small-link
 {
     font-size: 14px;
 }
 
-.link4,
-.link4:visited
+.black-link,
+.black-link:visited
 {
     font-weight: bold;
     color: black;
@@ -185,13 +195,31 @@ li
     color: #cf0606;
 }
 
-.gray
+.faded-text-cinema
+{
+    font-size: 12px;
+    color: gray;
+}
+
+.faded-text-date
+{
+    font-size: 11px;
+    color: gray;
+}
+
+.faded-text-searchbar
 {
     font-size: 13px;
     color: gray;
 }
 
-.link3
+.faded-text-changes
+{
+    font-size: 13px;
+    color: gray;
+}
+
+.default-small-link
 {
     margin-right: 20px;
 }
@@ -214,6 +242,23 @@ input
     background: white;
     border: 17px solid transparent;
     border-left: 12px solid gold;
+}
+
+.film-section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.film
+{
+    max-width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 input:focus
