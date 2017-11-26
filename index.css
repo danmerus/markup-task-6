@@ -15,12 +15,18 @@
 {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .bottom-center-block
 {
     display: grid;
     grid-template-columns: 1fr 20px 1fr 20px 1fr;
+}
+
+.mid-left-block
+{
+    text-align: right;
 }
 
 .col3
@@ -55,6 +61,7 @@ div
 a,
 h1
 {
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif !important;
     text-decoration: none;
     color: #2356ba;
@@ -136,8 +143,9 @@ h1
     height: 170px;
 }
 
-.gradient-1
+.auto-content:before
 {
+    content: '';
     z-index: 99;
     background-image: linear-gradient(to top, rgba(30,87,153,0), white);
     position: absolute;
@@ -145,14 +153,15 @@ h1
     width: 238px;
 }
 
-.gradient-2
+.auto-content:after
 {
+    content: '';
     z-index: 99;
     background-image: linear-gradient(to bottom, rgba(30,87,153,0), white);
     position: absolute;
     height: 50px;
     width: 238px;
-    margin-top: 130px;
+    margin-top: -240px;
 }
 
 .search-bar
@@ -237,11 +246,21 @@ input
     height: 36px;
 }
 
-.extra
+.button-text
 {
-    background: white;
-    border: 17px solid transparent;
+    margin: 0;
+    font-size: 14px;
+}
+
+.button-text::after
+{
+    position: relative;
+    left: 17px;
+    top: 1px;
+    content: "";
+    border-top: 11px solid transparent;
     border-left: 12px solid gold;
+    border-bottom: 10px solid transparent;
 }
 
 .film-section
@@ -269,12 +288,35 @@ input:focus
 .logo
 {
     height: 75px;
-    margin-left: 115px;
+    margin-right: 15px;
 }
+
+.minor-link
+{
+    margin: 10px;
+    color: black;
+}
+
+.minor-link:hover
+{
+    color: #cf0606;
+}
+
 
 .weather-logo
 {
+    vertical-align: -40%;
     width: 10%;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.auto-logo
+{
+    vertical-align: -40%;
+    width: 10%;
+    margin-top: 10px;
+    margin-right: 3px;
 }
 
 .avia
@@ -298,3 +340,28 @@ input:focus
     align-items: flex-start;
 }
 
+.popular
+{
+    margin-bottom: 30px;
+}
+
+.tv
+{
+    margin: 0 0 35px;
+}
+
+ul
+{
+    margin: 5px;
+    padding-bottom: 10px;
+}
+
+.news-top
+{
+    padding-bottom: 10px;
+}
+
+.auto-news
+{
+    padding-bottom: 100px;
+}
