@@ -241,6 +241,7 @@ input
 
 .search
 {
+    position: relative;
     border: none;
     background: gold;
     height: 36px;
@@ -255,12 +256,12 @@ input
 .search::after
 {
     position: absolute;
-    right: 247px;
-    top: 278px;
+    left: 52px;
+    top: 0px;
     content: "";
-    border-top: 19px solid transparent;
-    border-left: 12px solid gold;
-    border-bottom: 19px solid transparent;
+    border-top: 18px solid transparent;
+    border-left: 13px solid gold;
+    border-bottom: 18px solid transparent;
 }
 
 .film-section
